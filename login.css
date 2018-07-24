@@ -5,7 +5,8 @@ form {
 
 Full-width inputs*/
 input[type=text], input[type=password] {
-    width: 100%;
+    text-align: center;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -15,6 +16,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
+    text-align: center;
     background-color: orange;
     color: white;
     padding: 14px 20px;
