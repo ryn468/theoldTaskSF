@@ -4,6 +4,48 @@
 
     <meta charset="utf-8">
     <title></title>
+
+    <style>
+
+    .text {
+      color: white;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%, -50%);
+      opacity: 1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .5;
+      /* transition: .5s ease; */
+      background-color: #ff9100;
+    }
+
+
+
+    .container {
+      position: relative;
+      width: 100%;
+    }
+
+
+    .image {
+      display: block;
+      width: 50%;
+      height: auto;
+    }
+
+    </style>
+
   </head>
   <body>
     <header>
@@ -12,7 +54,28 @@
 
     <h1>Home</h1>
 
-    <img src="images/carsPic.jpg" alt="Post a Job">
+
+      <div class="image">
+        <div class="container">
+        <a href="JobPosting.html"><img src="images/carsPic.jpg" alt="Post a Job"  style="width:100%">
+        <div class="overlay">
+            <div class="text">Post a Job</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image">
+      <div class="container">
+        <a href="FindJobs.html"><img src="images/housesPic.jpg" alt="Find a Job" width=40% style="width:100%">
+      <div class="overlay">
+          <div class="text">Find a Job</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
     <footer>
       <a href = "AboutPage.html" > <em>About</em> </a>
