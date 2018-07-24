@@ -9,7 +9,9 @@
 } */
 
 /* Set a style for all buttons */
-
+h1{
+  /* border:1px solid red; */
+}
 button {
     background-color: orange;
     color: white;
