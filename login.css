@@ -5,10 +5,7 @@ form {
 
 Full-width inputs*/
 input[type=text], input[type=password] {
-<<<<<<< HEAD
-=======
     text-align: center;
->>>>>>> 0dbf9dd0f6e92b02a1f8dd5e766de20453aaedc9
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
