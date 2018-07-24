@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
     <header>
-      <img src="header.png" alt="header" width=100%>
+      <img src="images/header.png" alt="header" width=100%>
     </header>
 
     <h1>Log In</h1>
+
+    <body>
+       <p>Auth API Test</p>
+       <form action=
+        "https://{your_subdomain}.onelogin.com/session_via_api_token" method="POST">
+           <input type="hidden" name="session_token" value="{your session token value}">
+           <input type="submit" placeholder="GO">
+           <input id="auth_token" type="hidden">
+       </form>
+   </body>
 
     <footer>
       <a href = "AboutPage.html" > <em>About</em> </a>
