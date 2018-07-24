@@ -17,9 +17,7 @@
     Hours: <input type="text" id="hours" name="hours" value=""><br>
     Employer Name: <input type="text" id= "ename" name="ename" value="Your Name Here"><br>
     Company Name (Optional): <input type="text" id="cname" name="cname" value="Company Name (if applicable)"><br>
-    Neighborhood:
-    <form>
-    <select id="Neighborhood">
+    <form>Neighborhood:<select id="Neighborhood">
       <option>Bayview</option>
       <option>Castro/Upper Market</option>
       <option>Crocker Amazon</option>
@@ -51,11 +49,23 @@
       <option>Treasure Island</option>
       <option>Twin Peaks</option>
       <option>Visitacion Valley</option>
-    </select>
-    <br>
+    </select></form><br>
+    <script>
+    function getOption() {
+      var obj = document.getElementById("contactby");
+      document.getElementById("demo").innerHTML =
+      obj.options[obj.selectedIndex].text;
+    }
+    </script>
+    <form>How would you like to be contacted:<select id="contactby">
+      <option>Email</option>
+      <option>Phone (Call)</option>
+      <option>Phone (Text)</option>
+      <option>Other</option>
+    </select><br>
+    <input type="button" onclick="getOption()" value="Submit Choice">
     </form>
-
-    Contact info: <input type="text" id= "cinfo" name="cinfo" value="email or phone number"><br>
+    <input type="text" id= "cinfo" name="cinfo" value="email or phone number"><br>
 
     Job Description: <input type="text" name="jdisc"><br>
     Wage: <input type="text" name="wage"><br>
