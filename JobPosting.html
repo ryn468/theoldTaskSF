@@ -12,15 +12,33 @@
     <h1>Post a Job</h1>
     Job Title: <input type="text" id="jtitle" name="jtitle" value="ex.Dog Walker"><br>
     Job Type: <input type="text" id="jtype" name="jtype" value="Part Time or One Time"><br>
-    Job Description: <input type="text" id="jdisc" name="jdisc" value="Describe Job Here">
-    <textarea name="jdisc" form="usrform">enter job description here</textarea>
-
-    <br>
+    Job Description: <input type="text" id="jdisc" name="jdisc" value="Describe Job Here"><br>
     Wage: <input type="text" id="Wage" name="wage" value="ex. 15$/Hour"><br>
     Hours: <input type="text" id="hours" name="hours" value=""><br>
     Employer Name: <input type="text" id= "ename" name="ename" value="Your Name Here"><br>
     Company Name (Optional): <input type="text" id="cname" name="cname" value="Company Name (if applicable)"><br>
     Neighborhood: <input type="text" id= "location" name="location"><br>
+    <script>
+    function disable() {
+      document.getElementById("mySelect").disabled=true;
+    }
+    function enable() {
+      document.getElementById("mySelect").disabled=false;
+    }
+    </script>
+    <form>
+    <select id="mySelect">
+      <option>Apple</option>
+      <option>Pear</option>
+      <option>Banana</option>
+      <option>Orange</option>
+    </select>
+    <br>
+    </form>
+
+
+
+
     Contact info: <input type="text" id= "cinfo" name="cinfo" value="email or phone number"><br>
 
 
