@@ -8,6 +8,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+    align:center;
 }
 
 li {
@@ -24,5 +25,9 @@ li a {
 }
 
 li a:hover {
-    background-color: #111111;
+    color: grey;
+}
+
+p {
+  text-align: center;
 }
