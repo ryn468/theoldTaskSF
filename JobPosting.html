@@ -55,19 +55,28 @@
     <script>
     function getOption() {
       var obj = document.getElementById("contactby");
-      document.getElementById("demo").innerHTML =
+      document.getElementById("info").innerHTML =
       obj.options[obj.selectedIndex].text;
     }
     </script>
     <form>How would you like to be contacted:<select id="contactby">
+      <option></option>
       <option>Email</option>
       <option>Phone (Call)</option>
       <option>Phone (Text)</option>
-      <option>Other</option>
-    </select><br>
-    <input type="button" onclick="getOption()" value="Submit Choice">
+    </select><input type="button" onclick="getOption()" value="Submit Choice">
     </form>
-    <input type="text" id= "cinfo" name="cinfo" value="email or phone number"><br>
+    <script>
+      while info == "Email"{
+        print("good")
+      }
+      while info == "Phone (Call)"{
+        print("nice")
+      }
+      while info == "Phone (Text)"
+        print("got it")
+    </script>
+
 
     Job Description: <input type="text" name="jdisc"><br>
     Wage: <input type="text" name="wage"><br>
