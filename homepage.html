@@ -7,9 +7,18 @@
 
     <style>
 
+    .row {
+        display: flex;
+    }
+
+    /* Create two columns that sits next to each other */
+    .column {
+        flex: 50%;
+    }
+
     .text {
       color: white;
-      font-size: 30px;
+      font-size: 50px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -26,7 +35,7 @@
       height: 100%;
       width: 100%;
       opacity: .5;
-      /* transition: .5s ease; */
+      transition: .3s ease;
       background-color: #ff9100;
     }
 
@@ -44,6 +53,10 @@
       height: auto;
     }
 
+    .container:hover .overlay {
+      opacity: .8;
+    }
+
     </style>
 
   </head>
@@ -55,21 +68,29 @@
     <h1>Home</h1>
 
 
-      <div class="image">
+  <div class="row">
+
+    <!-- puts in orange images -->
+    <div class="column, image">
         <div class="container">
         <a href="JobPosting.html"><img src="images/carsPic.jpg" alt="Post a Job"  style="width:100%">
-        <div class="overlay">
-            <div class="text">Post a Job</div>
-        </div>
+          <!-- Creates the overlay color -->
+        <div class="overlay"> </div>
+          <!-- Text above image -->
+        <div class="text">Post a Job</div>
+
       </div>
     </div>
 
-    <div class="image">
+    <div class="column, image">
       <div class="container">
         <a href="FindJobs.html"><img src="images/housesPic.jpg" alt="Find a Job" width=40% style="width:100%">
-      <div class="overlay">
-          <div class="text">Find a Job</div>
-      </div>
+
+      <!-- Creates the overlay color -->
+      <div class="overlay"></div>
+
+      <!-- Text above image -->
+      <div class="text">Find a Job</div>
     </div>
   </div>
 
