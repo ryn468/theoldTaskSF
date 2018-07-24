@@ -28,6 +28,10 @@ li a:hover {
     color: grey;
 }
 
+.JobEntry:hover {
+    background-color: #ffe5c4;
+}
+
 p {
   text-align: center;
   font-size: 20px;
@@ -37,4 +41,14 @@ p {
   width: 15%;
   padding: 10px;
   float:right;
+}
+
+.JobEntry{
+  text-align: center;
+  font-size: 20px;
+  color:black;
+  padding:20px;
+  border-style: solid;
+  border-width: 1px;
+  margin:10px
 }
