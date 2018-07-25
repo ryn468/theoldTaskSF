@@ -52,6 +52,10 @@
       <option>Twin Peaks</option>
       <option>Visitacion Valley</option>
     </select></form><br>
+
+
+
+
     <script>
     function getOption() {
       var obj = document.getElementById("contactby");
@@ -59,22 +63,26 @@
       obj.options[obj.selectedIndex].text;
     }
     </script>
+
     <form>How would you like to be contacted:<select id="contactby">
       <option></option>
-      <option>Email</option>
-      <option>Phone (Call)</option>
-      <option>Phone (Text)</option>
+      <option value="Email">Email</option>
+      <option value="Phone (Call)">Phone (Call)</option>
+      <option value="Phone (Text)">Phone (Text)</option>
     </select><input type="button" onclick="getOption()" value="Submit Choice">
     </form>
+
     <script>
-      while info == "Email"{
-        print("good")
-      }
-      while info == "Phone (Call)"{
-        print("nice")
-      }
-      while info == "Phone (Text)"
-        print("got it")
+    document.getElementById("good")
+      // while(info == "Email"){
+      //
+      // }
+      // while(info == "Phone (Call)"){
+      //   print("nice")
+      // }
+      // while(info == "Phone (Text)"){
+      //   print("got it")
+      // }
     </script>
 
 
